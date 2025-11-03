@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nova Wear - Boutique</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Nova Wear</h1>
+      <ul>
+        <li><a href="#catalogue">Catalogue</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#panier">Panier (<span id="compteur-panier">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Exprime ton style avec Nova Wear</h2>
+      <a href="#catalogue" class="btn">Voir le catalogue</a>
+    </div>
+  </section>
+
+  <section id="catalogue">
+    <h2>Nos produits</h2>
+    <div class="filtres">
+      <button data-filtre="tous">Tous</button>
+      <button data-filtre="homme">Homme</button>
+      <button data-filtre="femme">Femme</button>
+      <button data-filtre="accessoires">Accessoires</button>
+    </div>
+    <div class="produits"></div>
+  </section>
+
+  <section id="panier">
+    <h2>Votre panier</h2>
+    <div class="contenu-panier">
+      <p>Votre panier est vide.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contactez-nous</h2>
+    <form id="form-contact">
+      <input type="text" name="nom" placeholder="Votre nom" required />
+      <input type="email" name="email" placeholder="Votre email" required />
+      <textarea name="message" placeholder="Votre message" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nova Wear. Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
